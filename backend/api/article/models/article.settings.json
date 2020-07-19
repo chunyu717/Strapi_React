@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "published_at": {
+      "type": "date"
+    },
+    "category": {
+      "model": "category",
+      "via": "articles"
+    }
+  }
+}

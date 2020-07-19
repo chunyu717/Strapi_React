@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aaas",
+      "handler": "aaa.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aaas/count",
+      "handler": "aaa.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aaas/:id",
+      "handler": "aaa.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aaas",
+      "handler": "aaa.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aaas/:id",
+      "handler": "aaa.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aaas/:id",
+      "handler": "aaa.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
